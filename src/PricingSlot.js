@@ -6,9 +6,13 @@ const propTypes = {
     highlighted: PropTypes.bool,
     onClick: PropTypes.func,
     title: PropTypes.string,
+<<<<<<< HEAD
     titleAccessor: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
     priceText: PropTypes.string,
     priceAccessor: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
+=======
+    priceText: PropTypes.string,
+>>>>>>> fix/multiple-tables
     buttonClass: PropTypes.string,
     buttonText: PropTypes.string,
     children: PropTypes.node,
@@ -25,14 +29,6 @@ const defaultProps = {
 class PricingSlot extends React.Component {
     constructor(props) {
         super(props);
-    }
-
-    componentDidMount() {
-        this.props.highlighted
-            ? (document.getElementById(
-                  "highlighted-header"
-              ).style.backgroundColor = this.props.highlightColor)
-            : null;
     }
 
     render() {
@@ -67,6 +63,11 @@ class PricingSlot extends React.Component {
                             id={
                                 (highlighted ? "highlighted" : "basic") +
                                 "-header"
+                            }
+                            style={
+                                highlighted
+                                    ? { backgroundColor: highlightColor }
+                                    : {}
                             }
                             className={
                                 (highlighted ? "highlighted" : "basic") +
