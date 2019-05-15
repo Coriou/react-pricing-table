@@ -6,13 +6,9 @@ const propTypes = {
     highlighted: PropTypes.bool,
     onClick: PropTypes.func,
     title: PropTypes.string,
-<<<<<<< HEAD
     titleAccessor: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
     priceText: PropTypes.string,
     priceAccessor: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
-=======
-    priceText: PropTypes.string,
->>>>>>> fix/multiple-tables
     buttonClass: PropTypes.string,
     buttonText: PropTypes.string,
     children: PropTypes.node,
