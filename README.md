@@ -202,6 +202,18 @@ The examples are hosted within the docs folder and are ran in the simple add tha
           <td>false</td>
           <td>Whether to show highlighted header.</td>
         </tr>
+        <tr>
+          <td>titleAccessor</td>
+          <td>React element</td>
+          <td></td>
+          <td>A custom element to render title. Props: <code>id, className, highlighted, highlightColor, text</code></td>
+        </tr>
+        <tr>
+          <td>priceAccessor</td>
+          <td>React element</td>
+          <td></td>
+          <td>A custom element to render price. Props: <code>text</code></td>
+        </tr>
     </tbody>
 </table>
 
